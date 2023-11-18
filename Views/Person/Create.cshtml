@@ -1,0 +1,47 @@
+﻿@model Model_Binding_incelemesi.Models.Person
+
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("Create"))
+{
+    <table>
+        <tr>
+            <td>Id:</td>
+            <td>
+                <input id="Id" name="Id" type="text" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>İsim:</td>
+            <td>
+                <input id="Id" name="Name" type="text" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Fotoğraf Id:</td>
+            <td>
+                <input id="Id" name="Image.Id" type="text" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Fotoğraf Boy:</td>
+            <td>
+                <input id="Id" name="Image.Height" type="text" value="" />
+            </td>
+        </tr>
+        <tr>
+            <td>Fotoğraf En:</td>
+            <td>
+                <input id="Id" name="Image.Width" type="text" value="" />
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                <input type="submit" value="Kaydet" />
+            </td>
+        </tr>
+    </table>
+}

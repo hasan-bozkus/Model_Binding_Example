@@ -1,0 +1,37 @@
+﻿@model Model_Binding_incelemesi.Models.Person
+@{
+    Layout = null;
+}
+
+<table>
+    <tr>
+        <td>Id:</td>
+        <td>
+            @Model.Id
+        </td>
+    </tr>
+    <tr>
+        <td>İsim:</td>
+        <td>
+           @Model.Name
+        </td>
+    </tr>
+    <tr>
+        <td>Fotoğraf Id:</td>
+        <td>
+            @Model.Image.Id
+        </td>
+    </tr>
+    <tr>
+        <td>Fotoğraf Boy:</td>
+        <td>
+            @Model.Image.Height
+        </td>
+    </tr>
+    <tr>
+        <td>Fotoğraf En:</td>
+        <td>
+            @Model.Image.Width
+        </td>
+    </tr>
+</table>
