@@ -49,8 +49,15 @@ namespace Model_Binding_incelemesi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                     name: "getid",
+                     pattern: "getid/{Id?}",
+                     defaults: new { controller = "Home", action = "GetId" });
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
             });
         }
     }

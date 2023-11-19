@@ -18,9 +18,14 @@ namespace Model_Binding_incelemesi.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string Index(string result)
         {
-            return View();
+            return result;
+        }
+
+        public string GetId(int? Id)
+        {
+            return Id == null ? "Id bulunamadı." : "Id:" + Id;
         }
 
         public IActionResult Privacy()
